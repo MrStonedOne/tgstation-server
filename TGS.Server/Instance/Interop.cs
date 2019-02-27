@@ -109,7 +109,7 @@ namespace TGS.Server
 			switch (cmd)
 			{
 				case SRIRCBroadcast:
-					SendMessage("GAME: " + String.Join(" ", splits), MessageType.GameInfo);
+					SendMessage(String.Join(" ", splits), MessageType.GameInfo);
 					break;
 				case SRKillProcessSilent:
 					showKillMessage = false;
